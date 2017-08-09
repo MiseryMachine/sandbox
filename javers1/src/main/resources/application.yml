@@ -1,0 +1,18 @@
+#javers:
+#  mappingStyle: FIELD
+#  algorithm: SIMPLE
+#  prettyPrint: true
+#  typeSafeValues: false
+#  newObjectSnapshot: false
+#  packagesToScan:
+#  auditableAspectEnabled: true
+#  springDataAuditableRepositoryAspectEnabled: true
+#spring:
+#  jpa:
+#    hibernate:
+#      ddl-auto: none
+#  datasource:
+#    url: jdbc:mysql://localhost3306/discus_ng_server
+#    username: root
+#    password: admin
+
