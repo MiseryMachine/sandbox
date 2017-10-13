@@ -9,18 +9,19 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>sandbox-autogen-number</artifactId>
-	<name>Auto-Generate Number</name>
-	<description>Based on an expression, automatically generate next increment.</description>
+	<artifactId>sandbox-enum-json</artifactId>
+	<name>Enum-JSON</name>
+	<description>Testing JSON serialization of enums.</description>
+
 
 	<properties>
 		<!-- Config properties -->
 		<java.version>1.8</java.version>
 
 		<!-- Project dependency properties. -->
-		<mysql.version>5.1.43</mysql.version>
 		<spring-boot.version>1.5.6.RELEASE</spring-boot.version>
-		<javers.version>3.5.0</javers.version>
+		<jackson.version>2.8.8</jackson.version>
+
 	</properties>
 
 	<dependencyManagement>
@@ -42,6 +43,16 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -49,7 +60,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>auto-num-generator-1</finalName>
+		<finalName>enum-json-1</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
